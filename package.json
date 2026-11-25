@@ -2,7 +2,7 @@
   "name": "graamseva",
   "version": "1.0.0",
   "engines": {
-    "node": "20.x"
+    "node": "26.x"
   },
   "scripts": {
     "build": "cd client && npm install && npm run build",
