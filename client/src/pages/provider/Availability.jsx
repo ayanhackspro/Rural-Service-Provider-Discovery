@@ -89,14 +89,14 @@ export default function Availability() {
         <div className="container section-sm">
           <div className="page-header">
             <p className="page-header__eyebrow">Provider</p>
-            <h1 style={{ fontStyle: 'italic' }}>Availability Manager</h1>
+            <h1>Availability Manager</h1>
           </div>
 
           {services.length === 0 ? (
             <div style={{ textAlign: 'center', padding: 'var(--space-12) 0', color: 'var(--color-muted)' }}>
               <Clock size={48} strokeWidth={1} style={{ marginBottom: 'var(--space-4)', opacity: 0.5, margin: '0 auto' }} />
               <h2 className="empty-state__title">No services found</h2>
-              <p style={{ fontStyle: 'italic' }}>Create a service listing first to manage its availability.</p>
+              <p>Create a service listing first to manage its availability.</p>
             </div>
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: '300px 1fr', gap: 'var(--space-6)', alignItems: 'start' }}>
@@ -120,7 +120,7 @@ export default function Availability() {
               {/* Main: Slot Editor */}
               <div className="card">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-6)', paddingBottom: 'var(--space-4)', borderBottom: '1px solid var(--color-rule)' }}>
-                  <h2 style={{ fontSize: 'var(--text-xl)', fontStyle: 'italic' }}>Editing: {activeService?.title}</h2>
+                  <h2 style={{ fontSize: 'var(--text-xl)' }}>Editing: {activeService?.title}</h2>
                   <button className="btn btn-primary btn-sm" onClick={handleSave} disabled={saving} style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
                     <Save size={16} /> {saving ? 'Saving...' : 'Save Changes'}
                   </button>
@@ -165,7 +165,7 @@ export default function Availability() {
                               );
                             })
                           ) : (
-                            <div className="muted" style={{ fontSize: 'var(--text-sm)', padding: '6px 0', fontStyle: 'italic' }}>
+                            <div className="muted" style={{ fontSize: 'var(--text-sm)', padding: '6px 0' }}>
                               Not available
                             </div>
                           )}

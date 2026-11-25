@@ -44,14 +44,14 @@ export default function Favourites() {
         <div className="container section-sm">
           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)', marginBottom: 'var(--space-8)' }}>
             <Heart size={28} color="var(--color-accent)" fill="var(--color-accent)" />
-            <h1 style={{ fontStyle: 'italic' }}>Saved Services</h1>
+            <h1>Saved Services</h1>
           </div>
 
           {services.length === 0 ? (
             <div style={{ textAlign: 'center', padding: 'var(--space-12) 0', color: 'var(--color-muted)' }}>
               <Heart size={48} strokeWidth={1} style={{ marginBottom: 'var(--space-4)', opacity: 0.5, margin: '0 auto' }} />
               <h2 className="empty-state__title">No saved services</h2>
-              <p style={{ fontStyle: 'italic', marginBottom: 'var(--space-6)' }}>Find services you love and save them for later.</p>
+              <p style={{ marginBottom: 'var(--space-6)' }}>Find services you love and save them for later.</p>
               <Link to="/search" className="btn btn-primary">Browse Services</Link>
             </div>
           ) : (

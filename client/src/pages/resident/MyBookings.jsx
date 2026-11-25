@@ -105,7 +105,7 @@ export default function MyBookings() {
         <div className="container section-sm">
           <div className="page-header">
             <p className="page-header__eyebrow">Resident</p>
-            <h1 style={{ fontStyle: 'italic' }}>My Bookings</h1>
+            <h1>My Bookings</h1>
           </div>
 
           {/* Status tabs */}
@@ -223,7 +223,7 @@ export default function MyBookings() {
                           <XCircle size={14} />
                           Cancelled by {b.cancelledBy ? b.cancelledBy.charAt(0).toUpperCase() + b.cancelledBy.slice(1) : 'User'}
                         </div>
-                        <div style={{ color: 'var(--color-ink-dim)', fontStyle: 'italic' }}>
+                        <div style={{ color: 'var(--color-ink-dim)' }}>
                           "{b.cancellationReason || 'No reason provided'}"
                         </div>
                       </div>
@@ -288,7 +288,7 @@ export default function MyBookings() {
           <div className="modal-overlay" onClick={() => !cancelling && setCancelModalBooking(null)}>
             <div className="modal" onClick={(e) => e.stopPropagation()}>
               <div className="modal__header">
-                <h2 style={{ fontSize: 'var(--text-xl)', fontStyle: 'italic', color: 'var(--color-error)' }}>Cancel Booking</h2>
+                <h2 style={{ fontSize: 'var(--text-xl)', color: 'var(--color-error)' }}>Cancel Booking</h2>
                 <button className="btn btn-ghost btn-sm" disabled={cancelling} onClick={() => setCancelModalBooking(null)}>✕</button>
               </div>
               
@@ -360,7 +360,7 @@ export default function MyBookings() {
           <div className="modal-overlay" onClick={() => setReviewModal(null)}>
             <div className="modal" onClick={(e) => e.stopPropagation()}>
               <div className="modal__header">
-                <h2 style={{ fontSize: 'var(--text-xl)', fontStyle: 'italic' }}>Review your experience</h2>
+                <h2 style={{ fontSize: 'var(--text-xl)' }}>Review your experience</h2>
                 <button className="btn btn-ghost btn-sm" onClick={() => setReviewModal(null)}>✕</button>
               </div>
               <p className="muted" style={{ fontSize: 'var(--text-sm)', marginBottom: 'var(--space-5)' }}>

@@ -32,14 +32,14 @@ export default function MyReviews() {
         <div className="container section-sm" style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)', marginBottom: 'var(--space-8)' }}>
             <MessageSquare size={28} className="muted" />
-            <h1 style={{ fontStyle: 'italic' }}>My Reviews</h1>
+            <h1>My Reviews</h1>
           </div>
 
           {reviews.length === 0 ? (
             <div style={{ textAlign: 'center', padding: 'var(--space-12) 0', color: 'var(--color-muted)' }}>
               <Star size={48} strokeWidth={1} style={{ marginBottom: 'var(--space-4)', opacity: 0.5, margin: '0 auto' }} />
               <h2 className="empty-state__title">No reviews yet</h2>
-              <p style={{ fontStyle: 'italic' }}>You haven't left any reviews for services.</p>
+              <p>You haven't left any reviews for services.</p>
             </div>
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
@@ -58,7 +58,7 @@ export default function MyReviews() {
                       <Star key={i} size={16} fill={i < review.rating ? 'var(--color-accent)' : 'transparent'} color={i < review.rating ? 'var(--color-accent)' : 'var(--color-border)'} />
                     ))}
                   </div>
-                  <p style={{ fontStyle: 'italic', color: 'var(--color-muted)' }}>"{review.comment}"</p>
+                  <p style={{ color: 'var(--color-muted)' }}>"{review.comment}"</p>
                 </div>
               ))}
             </div>

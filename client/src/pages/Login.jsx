@@ -45,7 +45,7 @@ export default function Login() {
         <div style={{ width: '100%', maxWidth: '420px' }}>
           <div style={{ marginBottom: 'var(--space-8)' }}>
             <p className="label" style={{ color: 'var(--color-accent)', marginBottom: 'var(--space-3)' }}>Welcome back</p>
-            <h1 style={{ fontSize: 'var(--text-2xl)', fontStyle: 'italic' }}>Sign in to GraamSeva</h1>
+            <h1 style={{ fontSize: 'var(--text-2xl)' }}>Sign in to GraamSeva</h1>
           </div>
 
           {error && <div className="alert alert-error" style={{ marginBottom: 'var(--space-5)' }}>{error}</div>}

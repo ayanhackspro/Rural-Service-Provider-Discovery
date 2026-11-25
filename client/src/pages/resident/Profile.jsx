@@ -80,13 +80,13 @@ export default function Profile() {
       <Navbar />
       <main>
         <div className="container section-sm" style={{ maxWidth: '600px', margin: '0 auto' }}>
-          <h1 style={{ fontStyle: 'italic', marginBottom: 'var(--space-6)' }}>My Profile</h1>
+          <h1 style={{ marginBottom: 'var(--space-6)' }}>My Profile</h1>
           
           {error && <div className="alert alert-error" style={{ marginBottom: 'var(--space-4)' }}>{error}</div>}
           {success && <div className="alert alert-success" style={{ marginBottom: 'var(--space-4)' }}>{success}</div>}
 
           <form onSubmit={handleSubmit} className="card">
-            <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+            <h3 style={{ marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
               <User size={20} style={{ color: 'var(--color-accent)' }} /> Personal Details
             </h3>
             
@@ -102,7 +102,7 @@ export default function Profile() {
 
             <div style={{ margin: 'var(--space-6) 0', borderTop: '1px solid var(--color-rule)' }}></div>
 
-            <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+            <h3 style={{ marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
               <MapPin size={20} style={{ color: 'var(--color-accent)' }} /> Location
             </h3>
 
@@ -119,7 +119,7 @@ export default function Profile() {
 
             <div style={{ margin: 'var(--space-6) 0', borderTop: '1px solid var(--color-rule)' }}></div>
 
-            <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-2)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+            <h3 style={{ marginBottom: 'var(--space-2)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
               <Lock size={20} style={{ color: 'var(--color-accent)' }} /> Change Password
             </h3>
             <p className="muted" style={{ fontSize: 'var(--text-xs)', marginBottom: 'var(--space-4)' }}>Leave blank if you do not want to change your password.</p>

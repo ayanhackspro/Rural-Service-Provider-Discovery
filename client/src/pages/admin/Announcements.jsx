@@ -62,11 +62,11 @@ export default function Announcements() {
         <div className="container section-sm" style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div className="page-header">
             <p className="page-header__eyebrow">Admin</p>
-            <h1 style={{ fontStyle: 'italic' }}>Announcements</h1>
+            <h1>Announcements</h1>
           </div>
 
           <form onSubmit={handleSubmit} className="card" style={{ marginBottom: 'var(--space-8)' }}>
-            <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+            <h3 style={{ marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
               <Megaphone size={20} className="muted" /> Post New Announcement
             </h3>
             
@@ -85,7 +85,7 @@ export default function Announcements() {
             </button>
           </form>
 
-          <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-4)' }}>Recent Announcements</h3>
+          <h3 style={{ marginBottom: 'var(--space-4)' }}>Recent Announcements</h3>
           
           {announcements.length === 0 ? (
             <p className="muted">No announcements posted yet.</p>

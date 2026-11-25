@@ -80,7 +80,7 @@ export default function ManageServices() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 'var(--space-4)', marginBottom: 'var(--space-6)' }}>
             <div>
               <p className="label" style={{ color: 'var(--color-accent)', marginBottom: 'var(--space-2)' }}>Catalog Control</p>
-              <h1 style={{ fontStyle: 'italic' }}>Manage All Services ({total})</h1>
+              <h1>Manage All Services ({total})</h1>
             </div>
             <Link to="/services" target="_blank" className="btn btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: 'var(--space-2)' }}>
               <span>View Public Directory</span>
@@ -137,7 +137,7 @@ export default function ManageServices() {
             <Loader />
           ) : services.length === 0 ? (
             <div className="card" style={{ textAlign: 'center', padding: 'var(--space-12) var(--space-4)' }}>
-              <p className="muted" style={{ fontStyle: 'italic', fontSize: 'var(--text-lg)' }}>No services found matching the criteria.</p>
+              <p className="muted" style={{ fontSize: 'var(--text-lg)' }}>No services found matching the criteria.</p>
             </div>
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
@@ -153,7 +153,7 @@ export default function ManageServices() {
                   {/* Info */}
                   <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', flexWrap: 'wrap', marginBottom: 'var(--space-1)' }}>
-                      <h3 style={{ fontStyle: 'italic', margin: 0, fontSize: 'var(--text-base)' }}>{s.title}</h3>
+                      <h3 style={{ margin: 0, fontSize: 'var(--text-base)' }}>{s.title}</h3>
                       <span className={`badge ${s.isActive ? 'badge-provider' : 'badge-pending'}`}>
                         {s.isActive ? 'Active' : 'Inactive'}
                       </span>

@@ -9,7 +9,7 @@ export default function EmptyState({ icon, title, description, action }) {
         </div>
       )}
       <h2 className="empty-state__title" style={{ color: 'var(--color-ink)' }}>{title}</h2>
-      <p style={{ fontStyle: 'italic', color: 'var(--color-muted)', marginBottom: action ? 'var(--space-6)' : '0' }}>
+      <p style={{ color: 'var(--color-muted)', marginBottom: action ? 'var(--space-6)' : '0' }}>
         {description}
       </p>
       {action && <div>{action}</div>}

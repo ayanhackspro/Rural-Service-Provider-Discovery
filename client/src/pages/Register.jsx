@@ -53,7 +53,7 @@ export default function Register() {
         <div style={{ width: '100%', maxWidth: '480px' }}>
           <div style={{ marginBottom: 'var(--space-8)' }}>
             <p className="label" style={{ color: 'var(--color-accent)', marginBottom: 'var(--space-3)' }}>Create account</p>
-            <h1 style={{ fontSize: 'var(--text-2xl)', fontStyle: 'italic' }}>Join GraamSeva</h1>
+            <h1 style={{ fontSize: 'var(--text-2xl)' }}>Join GraamSeva</h1>
           </div>
 
           {/* Role selector */}

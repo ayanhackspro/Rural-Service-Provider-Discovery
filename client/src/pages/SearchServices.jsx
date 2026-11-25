@@ -62,7 +62,7 @@ export default function SearchServices() {
         <div className="container">
           <div className="page-header">
             <p className="page-header__eyebrow">All Services</p>
-            <h1 style={{ fontStyle: 'italic' }}>Find a service provider</h1>
+            <h1>Find a service provider</h1>
           </div>
 
           {/* Search + filters */}

@@ -73,14 +73,14 @@ export default function ProviderProfile() {
         <div className="container section-sm" style={{ maxWidth: '600px', margin: '0 auto' }}>
           <div className="page-header">
             <p className="page-header__eyebrow">Provider</p>
-            <h1 style={{ fontStyle: 'italic', marginBottom: 'var(--space-6)' }}>My Profile</h1>
+            <h1 style={{ marginBottom: 'var(--space-6)' }}>My Profile</h1>
           </div>
           
           {error && <div className="alert alert-error" style={{ marginBottom: 'var(--space-4)' }}>{error}</div>}
           {success && <div className="alert alert-success" style={{ marginBottom: 'var(--space-4)' }}>{success}</div>}
 
           <form onSubmit={handleSubmit} className="card">
-            <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+            <h3 style={{ marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
               <User size={20} style={{ color: 'var(--color-accent)' }} /> Basic Information
             </h3>
             
@@ -110,7 +110,7 @@ export default function ProviderProfile() {
 
             <div style={{ margin: 'var(--space-6) 0', borderTop: '1px solid var(--color-rule)' }}></div>
 
-            <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+            <h3 style={{ marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
               <MapPin size={20} style={{ color: 'var(--color-accent)' }} /> Service Area (Location)
             </h3>
 

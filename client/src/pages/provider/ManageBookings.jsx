@@ -122,7 +122,7 @@ export default function ManageBookings() {
         <div className="container section-sm">
           <div style={{ marginBottom: 'var(--space-8)' }}>
             <p className="label" style={{ color: 'var(--color-accent)', marginBottom: 'var(--space-2)' }}>Provider Dashboard</p>
-            <h1 style={{ fontStyle: 'italic' }}>Manage Bookings</h1>
+            <h1>Manage Bookings</h1>
           </div>
 
           {/* Navigation tabs */}
@@ -207,7 +207,7 @@ export default function ManageBookings() {
                     </div>
 
                     {b.notes && (
-                      <p style={{ fontSize: 'var(--text-sm)', color: 'var(--color-ink-dim)', margin: 'var(--space-2) 0', fontStyle: 'italic', background: 'var(--color-paper-3)', padding: 'var(--space-2) var(--space-3)', borderRadius: 'var(--radius-sm)' }}>
+                      <p style={{ fontSize: 'var(--text-sm)', color: 'var(--color-ink-dim)', margin: 'var(--space-2) 0', background: 'var(--color-paper-3)', padding: 'var(--space-2) var(--space-3)', borderRadius: 'var(--radius-sm)' }}>
                         Resident note: "{b.notes}"
                       </p>
                     )}
@@ -227,7 +227,7 @@ export default function ManageBookings() {
                           <XCircle size={14} />
                           Cancelled by {b.cancelledBy ? b.cancelledBy.charAt(0).toUpperCase() + b.cancelledBy.slice(1) : 'User'}
                         </div>
-                        <div style={{ color: 'var(--color-ink-dim)', fontStyle: 'italic' }}>
+                        <div style={{ color: 'var(--color-ink-dim)' }}>
                           "{b.cancellationReason || 'No reason specified'}"
                         </div>
                       </div>
@@ -289,7 +289,7 @@ export default function ManageBookings() {
           <div className="modal-overlay" onClick={() => !verifyingOtp && setOtpModalBooking(null)}>
             <div className="modal" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '440px' }}>
               <div className="modal__header">
-                <h2 style={{ fontSize: 'var(--text-xl)', fontStyle: 'italic', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+                <h2 style={{ fontSize: 'var(--text-xl)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
                   <KeyRound size={22} style={{ color: 'var(--color-success)' }} />
                   Verify Completion OTP
                 </h2>
@@ -350,7 +350,7 @@ export default function ManageBookings() {
           <div className="modal-overlay" onClick={() => !cancelling && setCancelModalBooking(null)}>
             <div className="modal" onClick={(e) => e.stopPropagation()}>
               <div className="modal__header">
-                <h2 style={{ fontSize: 'var(--text-xl)', fontStyle: 'italic', color: 'var(--color-error)' }}>Cancel Booking</h2>
+                <h2 style={{ fontSize: 'var(--text-xl)', color: 'var(--color-error)' }}>Cancel Booking</h2>
                 <button className="btn btn-ghost btn-sm" disabled={cancelling} onClick={() => setCancelModalBooking(null)}>✕</button>
               </div>
 

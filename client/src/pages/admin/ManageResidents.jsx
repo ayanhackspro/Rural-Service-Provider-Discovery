@@ -105,7 +105,7 @@ export default function ManageResidents() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 'var(--space-4)', marginBottom: 'var(--space-8)' }}>
             <div>
               <p className="label" style={{ color: 'var(--color-accent)', marginBottom: 'var(--space-2)' }}>Admin</p>
-              <h1 style={{ fontStyle: 'italic' }}>Manage Residents ({total})</h1>
+              <h1>Manage Residents ({total})</h1>
             </div>
             <Link to="/admin" className="btn btn-ghost btn-sm">← Dashboard</Link>
           </div>
@@ -130,7 +130,7 @@ export default function ManageResidents() {
           ) : filteredUsers.length === 0 ? (
             <div style={{ textAlign: 'center', padding: 'var(--space-12) 0', color: 'var(--color-muted)' }}>
               <Users size={48} strokeWidth={1} style={{ marginBottom: 'var(--space-4)', opacity: 0.5, margin: '0 auto' }} />
-              <p style={{ fontStyle: 'italic' }}>No resident accounts found.</p>
+              <p>No resident accounts found.</p>
             </div>
           ) : (
             <div className="table-wrap">

@@ -99,7 +99,7 @@ export default function ManageListings() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 'var(--space-4)', marginBottom: 'var(--space-8)' }}>
             <div>
               <p className="label" style={{ color: 'var(--color-accent)', marginBottom: 'var(--space-2)' }}>Provider Dashboard</p>
-              <h1 style={{ fontStyle: 'italic' }}>My Service Listings</h1>
+              <h1>My Service Listings</h1>
             </div>
             {user?.isApproved ? (
               <button className="btn btn-primary" onClick={openCreate}>+ Add listing</button>
@@ -125,7 +125,7 @@ export default function ManageListings() {
                 <div key={s._id} className="card" style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 'var(--space-4)', alignItems: 'center' }}>
                   <div>
                     <div style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'center', marginBottom: 'var(--space-2)' }}>
-                      <h3 style={{ fontStyle: 'italic', fontSize: 'var(--text-lg)' }}>{s.title}</h3>
+                      <h3 style={{ fontSize: 'var(--text-lg)' }}>{s.title}</h3>
                       <span className="label">{s.category}</span>
                       {!s.isActive && <span className="badge badge-cancelled">Inactive</span>}
                     </div>
@@ -150,7 +150,7 @@ export default function ManageListings() {
           <div className="modal-overlay" onClick={() => setModal(null)}>
             <div className="modal" style={{ maxWidth: '600px', maxHeight: '90vh', overflowY: 'auto' }} onClick={(e) => e.stopPropagation()}>
               <div className="modal__header">
-                <h2 style={{ fontStyle: 'italic', fontSize: 'var(--text-xl)' }}>
+                <h2 style={{ fontSize: 'var(--text-xl)' }}>
                   {modal === 'create' ? 'Add service listing' : `Edit — ${modal.title}`}
                 </h2>
                 <button className="btn btn-ghost btn-sm" onClick={() => setModal(null)}>✕</button>

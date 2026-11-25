@@ -46,13 +46,13 @@ export default function ManageReviews() {
         <div className="container section-sm">
           <div className="page-header">
             <p className="page-header__eyebrow">Admin</p>
-            <h1 style={{ fontStyle: 'italic' }}>Platform Reviews</h1>
+            <h1>Platform Reviews</h1>
           </div>
 
           {reviews.length === 0 ? (
             <div style={{ textAlign: 'center', padding: 'var(--space-12) 0', color: 'var(--color-muted)' }}>
               <MessageSquare size={48} strokeWidth={1} style={{ marginBottom: 'var(--space-4)', opacity: 0.5, margin: '0 auto' }} />
-              <p style={{ fontStyle: 'italic' }}>No reviews found.</p>
+              <p>No reviews found.</p>
             </div>
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 'var(--space-4)' }}>
@@ -82,7 +82,7 @@ export default function ManageReviews() {
                     Date: {new Date(r.createdAt).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}
                   </div>
 
-                  <p style={{ fontStyle: 'italic', color: 'var(--color-text)', flex: 1 }}>
+                  <p style={{ color: 'var(--color-text)', flex: 1 }}>
                     "{r.comment || 'No comment provided.'}"
                   </p>
                 </div>

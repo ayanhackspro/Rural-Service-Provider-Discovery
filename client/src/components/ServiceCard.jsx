@@ -27,7 +27,7 @@ export default function ServiceCard({ service }) {
         </div>
 
         {/* Title */}
-        <h3 style={{ fontSize: 'var(--text-lg)', fontStyle: 'italic', lineHeight: 1.2 }}>
+        <h3 style={{ fontSize: 'var(--text-lg)', lineHeight: 1.2 }}>
           {title}
         </h3>
 

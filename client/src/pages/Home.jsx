@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import ServiceCard from '../components/ServiceCard';
 import Tilt from 'react-parallax-tilt';
 import { getPublicStats, getServices } from '../api/services';
-import { Wrench, Zap, BookOpen, Stethoscope, Hammer, Settings, Wheat, Paintbrush, Search, MapPin, Users, CheckCircle, TrendingUp, ArrowRight } from 'lucide-react';
+import { Wrench, Zap, BookOpen, Stethoscope, Hammer, Settings, Wheat, Paintbrush, Search, MapPin, Users, CheckCircle, TrendingUp, ArrowRight, Sparkles } from 'lucide-react';
 
 const STEPS = [
   { n: '01', title: 'Search & Discover', body: 'Browse providers by service type, location, or rating. Every listing is from a verified local provider in your district.' },
@@ -43,13 +43,14 @@ export default function Home() {
         <section className="section mesh-bg hero-section">
           <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
             <div style={{ maxWidth: '700px' }}>
-              <div className="label fade-in-up" style={{ display: 'inline-flex', alignItems: 'center', gap: 'var(--space-2)', background: 'oklch(72% 0.18 80 / 0.15)', color: 'var(--color-accent)', padding: 'var(--space-2) var(--space-4)', borderRadius: '999px', marginBottom: 'var(--space-6)', animationDelay: '0.1s' }}>
-                ✨ Your local service network
+              <div className="label fade-in-up" style={{ display: 'inline-flex', alignItems: 'center', gap: 'var(--space-2)', fontFamily: 'var(--font-display)', fontWeight: 500, background: 'oklch(72% 0.18 80 / 0.15)', color: 'var(--color-accent)', padding: 'var(--space-2) var(--space-4)', borderRadius: '999px', marginBottom: 'var(--space-6)', animationDelay: '0.1s' }}>
+                <Sparkles size={14} strokeWidth={2} />
+                Your local service network
               </div>
-              <h1 className="display fade-in-up" style={{ marginBottom: 'var(--space-6)', lineHeight: 1.1, animationDelay: '0.2s' }}>
+              <h1 className="display fade-in-up" style={{ fontFamily: "'Instrument Serif', ui-serif, Georgia, serif", fontWeight: 400, marginBottom: 'var(--space-6)', lineHeight: 1.1, animationDelay: '0.2s' }}>
                 Find trusted services,<br />right in your village.
               </h1>
-              <p className="fade-in-up" style={{ fontSize: 'var(--text-lg)', color: 'var(--color-ink-dim)', maxWidth: '55ch', margin: '0 auto var(--space-10) auto', lineHeight: 1.6, animationDelay: '0.3s' }}>
+              <p className="fade-in-up" style={{ fontSize: 'var(--text-md)', color: 'var(--color-ink-dim)', maxWidth: '55ch', margin: '0 auto var(--space-10) auto', lineHeight: 1.6, animationDelay: '0.3s' }}>
                 Skip the waiting. Connect instantly with verified local plumbers, electricians, and tutors backed by community reviews.
               </p>
               
@@ -121,7 +122,7 @@ export default function Home() {
                   <span style={{ fontFamily: 'var(--font-outlier)', fontSize: 'var(--text-3xl)', color: 'var(--color-rule)', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
                     {step.n}
                   </span>
-                  <h3 style={{ fontStyle: 'italic', fontSize: 'var(--text-lg)' }}>{step.title}</h3>
+                  <h3 style={{ fontSize: 'var(--text-lg)' }}>{step.title}</h3>
                   <p style={{ color: 'var(--color-ink-dim)', fontSize: 'var(--text-sm)', lineHeight: 1.6 }}>{step.body}</p>
                 </div>
               ))}
@@ -137,7 +138,7 @@ export default function Home() {
             <Link to="/services?category=Agricultural" className="seasonal-banner hover-lift">
               <div>
                 <span className="badge badge-pending" style={{ marginBottom: 'var(--space-3)', display: 'inline-block' }}>Seasonal Highlight</span>
-                <h2 style={{ fontStyle: 'italic', fontSize: 'var(--text-xl)', marginBottom: 'var(--space-2)' }}>Prepare for the Harvest</h2>
+                <h2 style={{ fontSize: 'var(--text-xl)', marginBottom: 'var(--space-2)' }}>Prepare for the Harvest</h2>
                 <p style={{ color: 'var(--color-ink-dim)' }}>Find verified tractor mechanics, harvesters, and agricultural laborers near you.</p>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', color: 'var(--color-accent)', fontWeight: 500 }}>
@@ -152,7 +153,7 @@ export default function Home() {
           <section className="section">
             <div className="container">
               <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', flexWrap: 'wrap', gap: 'var(--space-4)', marginBottom: 'var(--space-8)' }}>
-                <h2 style={{ fontStyle: 'italic' }}>Top Rated Providers</h2>
+                <h2>Top Rated Providers</h2>
                 <Link to="/services" className="btn btn-ghost btn-sm">View all →</Link>
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 'var(--space-6)' }}>
@@ -172,7 +173,7 @@ export default function Home() {
         <section className="section">
           <div className="container">
             <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', flexWrap: 'wrap', gap: 'var(--space-4)', marginBottom: 'var(--space-8)' }}>
-              <h2 style={{ fontStyle: 'italic' }}>Browse by category</h2>
+              <h2>Browse by category</h2>
               <Link to="/services" className="btn btn-ghost btn-sm">View all →</Link>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 'var(--space-4)' }}>
@@ -214,7 +215,7 @@ export default function Home() {
             <div className="container">
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 'var(--space-6)' }}>
                 <div>
-                  <h2 style={{ fontStyle: 'italic', marginBottom: 'var(--space-2)' }}>Are you a service provider?</h2>
+                  <h2 style={{ marginBottom: 'var(--space-2)' }}>Are you a service provider?</h2>
                   <p style={{ color: 'var(--color-ink-dim)', fontSize: 'var(--text-md)' }}>
                     List your services and reach more residents in your area.
                   </p>

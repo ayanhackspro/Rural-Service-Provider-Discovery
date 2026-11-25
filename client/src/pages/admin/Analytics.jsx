@@ -31,7 +31,7 @@ export default function Analytics() {
         <div className="container section-sm">
           <div className="page-header">
             <p className="page-header__eyebrow">Admin</p>
-            <h1 style={{ fontStyle: 'italic' }}>Platform Analytics</h1>
+            <h1>Platform Analytics</h1>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'var(--space-4)', marginBottom: 'var(--space-8)' }}>
@@ -50,7 +50,7 @@ export default function Analytics() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-6)', alignItems: 'start' }}>
             {/* Bookings by Category */}
             <div className="card">
-              <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+              <h3 style={{ marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
                 <BarChart2 size={20} className="muted" /> Bookings by Category
               </h3>
               {data?.byCategory?.length === 0 ? (
@@ -78,7 +78,7 @@ export default function Analytics() {
 
             {/* Top Providers */}
             <div className="card">
-              <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+              <h3 style={{ marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
                 <Award size={20} className="muted" /> Top Providers (by bookings)
               </h3>
               {data?.topProviders?.length === 0 ? (

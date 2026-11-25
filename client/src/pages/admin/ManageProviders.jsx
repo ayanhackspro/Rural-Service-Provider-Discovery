@@ -93,7 +93,7 @@ export default function ManageProviders() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 'var(--space-4)', marginBottom: 'var(--space-8)' }}>
             <div>
               <p className="label" style={{ color: 'var(--color-accent)', marginBottom: 'var(--space-2)' }}>Admin</p>
-              <h1 style={{ fontStyle: 'italic' }}>Manage Service Providers ({filteredUsers.length})</h1>
+              <h1>Manage Service Providers ({filteredUsers.length})</h1>
             </div>
             <Link to="/admin" className="btn btn-ghost btn-sm">← Dashboard</Link>
           </div>

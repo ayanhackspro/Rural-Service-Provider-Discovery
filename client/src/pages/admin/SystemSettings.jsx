@@ -82,7 +82,7 @@ export default function SystemSettings() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 'var(--space-4)', marginBottom: 'var(--space-8)' }}>
             <div>
               <p className="label" style={{ color: 'var(--color-accent)', marginBottom: 'var(--space-2)' }}>Diagnostics & Data Hub</p>
-              <h1 style={{ fontStyle: 'italic' }}>System Health & Reports</h1>
+              <h1>System Health & Reports</h1>
             </div>
             <button
               className="btn btn-outline"
@@ -101,7 +101,7 @@ export default function SystemSettings() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-8)' }}>
               {/* Telemetry Grid */}
               <div>
-                <h2 style={{ fontStyle: 'italic', fontSize: 'var(--text-xl)', marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+                <h2 style={{ fontSize: 'var(--text-xl)', marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
                   <Activity size={20} style={{ color: 'var(--color-accent)' }} />
                   Live Platform Telemetry
                 </h2>
@@ -167,7 +167,7 @@ export default function SystemSettings() {
 
               {/* Data Export Hub */}
               <div>
-                <h2 style={{ fontStyle: 'italic', fontSize: 'var(--text-xl)', marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+                <h2 style={{ fontSize: 'var(--text-xl)', marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
                   <FileSpreadsheet size={20} style={{ color: 'var(--color-accent)' }} />
                   Data Export & Reporting Hub
                 </h2>
@@ -179,7 +179,7 @@ export default function SystemSettings() {
                   {/* Export Users */}
                   <div className="card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                     <div>
-                      <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-2)' }}>Providers & Residents</h3>
+                      <h3 style={{ marginBottom: 'var(--space-2)' }}>Providers & Residents</h3>
                       <p className="muted" style={{ fontSize: 'var(--text-sm)', marginBottom: 'var(--space-4)' }}>
                         All registered users ({health.counts.users} records) with contact details, verification status, and ratings.
                       </p>
@@ -198,7 +198,7 @@ export default function SystemSettings() {
                   {/* Export Services */}
                   <div className="card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                     <div>
-                      <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-2)' }}>Service Catalog</h3>
+                      <h3 style={{ marginBottom: 'var(--space-2)' }}>Service Catalog</h3>
                       <p className="muted" style={{ fontSize: 'var(--text-sm)', marginBottom: 'var(--space-4)' }}>
                         Complete directory of active and inactive services ({health.counts.services} records) with pricing and categories.
                       </p>
@@ -217,7 +217,7 @@ export default function SystemSettings() {
                   {/* Export Bookings */}
                   <div className="card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                     <div>
-                      <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-2)' }}>Bookings & Work Orders</h3>
+                      <h3 style={{ marginBottom: 'var(--space-2)' }}>Bookings & Work Orders</h3>
                       <p className="muted" style={{ fontSize: 'var(--text-sm)', marginBottom: 'var(--space-4)' }}>
                         All customer appointment bookings ({health.counts.bookings} records) with status, date, time, and party details.
                       </p>
@@ -236,7 +236,7 @@ export default function SystemSettings() {
                   {/* Export Reviews */}
                   <div className="card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                     <div>
-                      <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-2)' }}>Customer Reviews</h3>
+                      <h3 style={{ marginBottom: 'var(--space-2)' }}>Customer Reviews</h3>
                       <p className="muted" style={{ fontSize: 'var(--text-sm)', marginBottom: 'var(--space-4)' }}>
                         All ratings and customer feedback ({health.counts.reviews} records) for quality assurance and moderation.
                       </p>
@@ -256,7 +256,7 @@ export default function SystemSettings() {
 
               {/* Admin Security Notes */}
               <div className="card" style={{ borderLeft: '4px solid var(--color-accent)', padding: 'var(--space-6)' }}>
-                <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-2)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+                <h3 style={{ marginBottom: 'var(--space-2)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
                   <Shield size={18} style={{ color: 'var(--color-accent)' }} />
                   Security & Direct User Control
                 </h3>

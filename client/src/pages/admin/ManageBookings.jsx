@@ -51,7 +51,7 @@ export default function ManageBookings() {
         <div className="container section-sm">
           <div className="page-header">
             <p className="page-header__eyebrow">Admin</p>
-            <h1 style={{ fontStyle: 'italic' }}>Platform Bookings</h1>
+            <h1>Platform Bookings</h1>
           </div>
 
           <div style={{ display: 'flex', gap: 'var(--space-2)', flexWrap: 'wrap', marginBottom: 'var(--space-8)' }}>
@@ -69,7 +69,7 @@ export default function ManageBookings() {
           {bookings.length === 0 ? (
             <div style={{ textAlign: 'center', padding: 'var(--space-12) 0', color: 'var(--color-muted)' }}>
               <CalendarX size={48} strokeWidth={1} style={{ marginBottom: 'var(--space-4)', opacity: 0.5, margin: '0 auto' }} />
-              <p style={{ fontStyle: 'italic' }}>No bookings found for this filter.</p>
+              <p>No bookings found for this filter.</p>
             </div>
           ) : (
             <div style={{ overflowX: 'auto' }}>

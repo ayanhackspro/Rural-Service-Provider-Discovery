@@ -31,7 +31,7 @@ export default function Earnings() {
         <div className="container section-sm">
           <div className="page-header">
             <p className="page-header__eyebrow">Provider</p>
-            <h1 style={{ fontStyle: 'italic' }}>Earnings Summary</h1>
+            <h1>Earnings Summary</h1>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 'var(--space-4)', marginBottom: 'var(--space-8)' }}>
@@ -53,12 +53,12 @@ export default function Earnings() {
           </div>
 
           <div className="card">
-            <h3 style={{ fontStyle: 'italic', marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+            <h3 style={{ marginBottom: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
               <TrendingUp size={20} className="muted" /> Monthly Breakdown
             </h3>
             
             {!data?.monthly || Object.keys(data.monthly).length === 0 ? (
-              <p className="muted" style={{ fontStyle: 'italic' }}>No completed bookings yet.</p>
+              <p className="muted">No completed bookings yet.</p>
             ) : (
               <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
                 {Object.entries(data.monthly).map(([month, count]) => (

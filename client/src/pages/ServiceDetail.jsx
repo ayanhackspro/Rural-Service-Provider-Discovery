@@ -119,7 +119,7 @@ export default function ServiceDetail() {
                 <div className="card provider-card-layout" style={{ marginBottom: 'var(--space-10)', background: 'var(--color-paper)', padding: 'var(--space-6)', border: '1px solid var(--color-rule)' }}>
                   <Avatar name={provider?.name} size={80} />
                   <div style={{ flex: 1 }}>
-                    <h3 style={{ fontSize: 'var(--text-xl)', fontStyle: 'italic', marginBottom: 'var(--space-2)' }}>{provider?.name}</h3>
+                    <h3 style={{ fontSize: 'var(--text-xl)', marginBottom: 'var(--space-2)' }}>{provider?.name}</h3>
                     <div className="provider-card-contact">
                       <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', color: 'var(--color-ink-dim)', fontSize: 'var(--text-sm)' }}>
                         <MapPin size={16} />
@@ -140,7 +140,7 @@ export default function ServiceDetail() {
                 </div>
 
                 {/* Service Description */}
-                <h2 style={{ fontStyle: 'italic', marginBottom: 'var(--space-4)' }}>Service Description</h2>
+                <h2 style={{ marginBottom: 'var(--space-4)' }}>Service Description</h2>
                 <p style={{ lineHeight: 1.8, color: 'var(--color-ink-dim)', marginBottom: 'var(--space-12)', fontSize: 'var(--text-md)', maxWidth: 'var(--max-prose)' }}>
                   {service.description}
                 </p>
@@ -150,7 +150,7 @@ export default function ServiceDetail() {
                 {/* Reviews */}
                 <div>
                   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 'var(--space-6)' }}>
-                    <h2 style={{ fontStyle: 'italic' }}>Reviews {reviews.length > 0 && `(${reviews.length})`}</h2>
+                    <h2>Reviews {reviews.length > 0 && `(${reviews.length})`}</h2>
                     {user?.role === 'resident' && (
                       <button className="btn btn-ghost btn-sm" onClick={handleReview}>Write a review</button>
                     )}
@@ -159,7 +159,7 @@ export default function ServiceDetail() {
                   {reviews.length === 0 ? (
                     <div style={{ textAlign: 'center', padding: 'var(--space-12) 0', color: 'var(--color-muted)' }}>
                       <MessageSquare size={40} strokeWidth={1} style={{ marginBottom: 'var(--space-4)', opacity: 0.5, margin: '0 auto' }} />
-                      <p style={{ fontStyle: 'italic' }}>No reviews yet. Be the first after booking!</p>
+                      <p>No reviews yet. Be the first after booking!</p>
                     </div>
                   ) : (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
@@ -186,7 +186,7 @@ export default function ServiceDetail() {
               {/* Right — Sticky Booking Panel */}
               <div className="fade-in-up" style={{ position: 'sticky', top: 'calc(65px + var(--space-6))', animationDelay: '0.4s' }}>
                 <div className="card" style={{ padding: 'var(--space-6)', border: '1px solid var(--color-rule)', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
-                  <h2 style={{ fontSize: 'var(--text-xl)', fontStyle: 'italic', marginBottom: 'var(--space-6)' }}>Book this service</h2>
+                  <h2 style={{ fontSize: 'var(--text-xl)', marginBottom: 'var(--space-6)' }}>Book this service</h2>
 
                   {(user?.role === 'provider' || user?.role === 'admin') && (
                     <div className="alert alert-info" style={{ marginBottom: 'var(--space-4)' }}>
